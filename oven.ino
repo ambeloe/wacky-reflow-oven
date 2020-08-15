@@ -7,14 +7,14 @@
 
 #include <LiquidCrystal.h>
 
-const float abc[] = {0.003740421496405315, -0.00024327003645827376, 0.0000015726434926621945};
+const float abc[] = {0.0010426455642216109, 0.00009633115006360066, 7.731725468701475e-7};
 uint8_t ignoreCount = 0;
-const long R2 = 1371;
+const unsigned short R2 = 1371;
 uint8_t pressedCount;
 bool cState = false;
-long ticks = 0;
+unsigned short ticks = 0;
 uint8_t bPrev;
-char buf[17];
+char buf[16];
 
 const int rs = 0, en = 1, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
