@@ -16,7 +16,13 @@ unsigned short ticks = 0;
 uint8_t bPrev;
 char buf[16];
 
-const int rs = 0, en = 1, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
+// const int rs = 0, en = 1, d4 = 2, d5 = 3, d6 = 4, d7 = 5;
+#define rs 0
+#define en 1
+#define d4 2
+#define d5 3
+#define d6 4
+#define d7 5
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup() {
